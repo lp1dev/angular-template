@@ -20,5 +20,8 @@
   "bugs": {
     "url": "https://github.com/lupin012345/angular-template/issues"
   },
-  "homepage": "https://github.com/lupin012345/angular-template#readme"
+  "homepage": "https://github.com/lupin012345/angular-template#readme",
+  "dependencies": {
+    "ng-annotate": "^1.2.1"
+  }
 }

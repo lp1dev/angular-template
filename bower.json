@@ -1,0 +1,22 @@
+{
+  "name": "angular-template",
+  "description": "AngularJS template",
+  "main": "index.html",
+  "authors": [
+    "Jeremie Amsellem (lupin@lp1.eu)"
+  ],
+  "license": "ISC",
+  "keywords": [
+    "AngularJS",
+    "Template",
+    "Starter"
+  ],
+  "homepage": "https://github.com/lupin012345/angular-template",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}

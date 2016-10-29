@@ -1,10 +1,11 @@
-(function() {
-    'use strict';
+/* global angular */
+(function () {
+  'use strict'
 
-    angular
-	.module('app')
-	.run(run)
+  angular
+    .module('app')
+    .run(run)
 
-    function run(){
-    }
-})();
+  function run () {
+  }
+})()

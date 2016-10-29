@@ -1,12 +1,14 @@
-var app = angular.module('app',
-			 [
-			     'app.services',
-			     'app.directives',
-			     'app.controllers',
-			     'ngRoute'
-			 ]);
+/* global angular */
+(function () {
+  var app = angular.module('app',
+    [
+      'app.services',
+      'app.directives',
+      'app.controllers',
+      'ngRoute'
+    ])
 
-var appControllers = angular.module('app.controllers', []);
-var appDirectives = angular.module('app.directives', []);
-var appServices = angular.module('app.services', []);
-
+  app.controllers = angular.module('app.controllers', [])
+  app.directives = angular.module('app.directives', [])
+  app.services = angular.module('app.services', [])
+})()

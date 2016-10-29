@@ -1,12 +1,13 @@
-(function (){
-    'use strict';
+/* global angular */
+(function () {
+  'use strict'
 
-    angular
-	.module('app')
-	.config(config)
+  angular
+    .module('app')
+    .config(config)
 
-    ////
-    
-    function config(){
-    }
-})();
+  //
+
+  function config () {
+  }
+})()

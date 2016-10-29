@@ -26,12 +26,14 @@ var main_html = "index.html";
 //TASKS
 gulp.task('default', ['build']);
 gulp.task('build', ['bower', 'standard', 'sass', 'uglify-js', 'htmlmin']);
+gulp.task('run', ['http', 'watch']);
 gulp.task('http', http_task);
 gulp.task('uglify-js', uglifyJS_task);
 gulp.task('htmlmin', htmlmin_task);
 gulp.task('sass', sass_task);
 gulp.task('standard', standard_task);
 gulp.task('bower', bower);
+gulp.task('watch', watch_task);
 
 ////
 
@@ -92,8 +94,6 @@ function uglifyJS_task(){
 }
 
 function watch_task(){
-    gulp.watch(project_scss_dirs, ['sass'])
-    gulp.watch(global_js_dirs, function(event){
-	gulp.run('uglify-js');
-    });
+    gulp.watch(project_scss_dirs, ['sass']);
+    gulp.watch(global_js_dirs, ['uglify-js']);
 }

@@ -1,4 +1,4 @@
-### AngularJS Template project
+#AngularJS Template project
 
 ## Requirements
 

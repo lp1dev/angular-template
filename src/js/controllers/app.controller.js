@@ -1,22 +1,21 @@
-(function() {
-    'use strict';
+(function () {
+  'use strict';
 
-    appControllers
-	.controller('appController', appController)
-    
-    ////
+  app.controllers
+    .controller('appController', appController)
 
-    /* @ngInject */
-    function appController($scope){
-	var vm = this;
+  ////
 
-	vm.name = "placeholder";
-	vm.onChange = onChange;
+  /* @ngInject */
+  function appController ($scope) {
+    var vm = this;
 
-	function onChange(value){
-	    vm.name = value;
-	    alert(value);
-	}
+    vm.name = "placeholder";
+    vm.onChange = onChange;
+
+    function onChange (value) {
+      vm.name = value;
+      alert(value);
     }
-    
+  }
 })();

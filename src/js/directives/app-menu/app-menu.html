@@ -1,2 +1,5 @@
 <div class="app-menu">
+    <div ng-repeat="item in menuVm.menuItems" class="app-menu-item" ng-click="menuVm.changeView(item.view)">
+        {{ item.name }}
+    </div>
 </div>

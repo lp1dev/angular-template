@@ -1,9 +1,17 @@
 @import "app-colors";
+@import "app-menu";
+@import "app";
 
-$app-header-height: 50px;
+$app-header-font-weigth: 500;
 
 .app-header{
+    font-weight: $app-header-font-weigth;
+    position: absolute;
     background-color: $app-main-color;
     width: 100%;
     height: $app-header-height;
+    line-height: $app-header-height;
+    border-left: 2px solid $app-border-color;
+    padding-left: $app-padding;
+    box-shadow: $app-shadow;
 }

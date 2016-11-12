@@ -6,7 +6,9 @@
 
   function appMenu() {
     var directive = {
-      templateUrl: 'js/directives/app-menu/app-menu.html'
+      templateUrl: 'js/directives/app-menu/app-menu.html',
+      controller: 'appMenuController',
+      controllerAs: 'menuVm'
     }
 
     return directive

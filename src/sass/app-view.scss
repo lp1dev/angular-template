@@ -1,8 +1,13 @@
+@import "app";
+@import "app-header";
+
 .main-container{
   display: flex;
 }
 
 .view-container{
+  margin-top: $app-header-height;
+  padding: $app-padding;
   width: 100%;
 }
 

@@ -1,3 +1,12 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+
+$app-font-family: 'Roboto', sans-serif;
+$app-padding: 15px;
+$app-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+$app-header-height: 50px;
+
 body {
+  font-family: $app-font-family;
   margin:0;
+  overflow: hidden;
 }

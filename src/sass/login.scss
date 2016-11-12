@@ -1,0 +1,21 @@
+@import "app";
+
+$login-box-width: 400px;
+$login-box-height: 300px;
+
+.login-box{
+  width: $login-box-width;
+  height: $login-box-height;
+  box-shadow: $app-shadow;
+  margin: auto;
+  padding: $app-padding;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+}
+
+.no-account-text{
+  color: $app-main-color;
+  font-size:  $app-font-size-small;
+}

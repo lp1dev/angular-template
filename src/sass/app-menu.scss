@@ -1,21 +1,35 @@
-@import "app-colors";
 @import "app";
 
 $app-menu-width: 250px;
 
-.app-menu{
-    margin: 0;
-    background-color: $app-background-color;
-    height: 100%;
-    width: $app-menu-width;
-    border: 1px solid $app-border-color;
-    padding-top: $app-header-height;
+.app-menu {
+  margin: 0;
+  background-color: $app-background-color;
+  height: 100%;
+  width: $app-menu-width;
+  padding-top: $app-header-height;
+  box-shadow: $app-shadow;
+  position:absolute;
 }
 
-.app-menu-item{
+.app-menu-item {
   padding: $app-padding;
+  border-bottom: 1px solid $app-border-color;
 }
 
-.app-menu-item:hover{
+.app-menu-item:hover {
   background-color: $app-secondary-color;
+}
+
+.app-menu.open{
+  transition: 1s ease-in-out;
+}
+
+.app-menu.closed{
+  transition: 1s ease-in-out;
+  transform: translate(-$app-menu-width, 0);
+}
+
+.app-menu-hamburger{
+  padding: $app-padding;
 }

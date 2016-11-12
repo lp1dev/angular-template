@@ -10,12 +10,17 @@
   function appMenuController ($location) {
     var menuVm = this;
 
+    menuVm.isOpen = true;
     menuVm.controller = "appMenuController"
     menuVm.changeView = changeView
     menuVm.menuItems = [
       {
         "name": "Home",
         "view": "/"
+      },
+      {
+        "name": "Login",
+        "view": "/login"
       }
     ]
 

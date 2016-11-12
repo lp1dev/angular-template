@@ -9,6 +9,8 @@
   margin-top: $app-header-height;
   padding: $app-padding;
   width: 100%;
+  display: flex;
+  justify-content: center;
 }
 
 .app-view{

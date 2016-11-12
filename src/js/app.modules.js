@@ -4,7 +4,8 @@ var app = angular.module('app',
     'app.services',
     'app.directives',
     'app.controllers',
-    'ngRoute'
+    'ngRoute',
+    'ui.bootstrap'
   ])
 
 app.controllers = angular.module('app.controllers', [])

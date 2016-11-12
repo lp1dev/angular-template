@@ -18,5 +18,10 @@
         controller: 'homeController',
         controllerAs: 'vm'
       })
+      .when('/login', {
+        templateUrl: 'partials/login.html',
+        controller: 'loginController',
+        controllerAs: 'vm'
+      })
   }
 })()

@@ -1,4 +1,3 @@
-@import "app-colors";
 @import "app-menu";
 @import "app";
 
@@ -12,6 +11,6 @@ $app-header-font-weigth: 500;
     height: $app-header-height;
     line-height: $app-header-height;
     border-left: 2px solid $app-border-color;
-    padding-left: $app-padding;
     box-shadow: $app-shadow;
+    z-index:2;
 }

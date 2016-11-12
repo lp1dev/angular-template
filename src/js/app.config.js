@@ -4,7 +4,7 @@
 
   angular
     .module('app')
-    .constant('APP_NAME', 'App Name')
+    .constant('APP_NAME', 'AngularJS Template')
     .config(config)
 
   //

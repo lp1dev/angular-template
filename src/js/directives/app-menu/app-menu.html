@@ -1,4 +1,4 @@
-<div class="app-menu">
+<div class="app-menu" ng-class="menuVm.isOpen ? 'open' : 'closed'">
     <div ng-repeat="item in menuVm.menuItems" class="app-menu-item" ng-click="menuVm.changeView(item.view)">
         {{ item.name }}
     </div>

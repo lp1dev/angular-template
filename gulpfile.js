@@ -20,7 +20,7 @@ var build_dir = "./dist";
 var global_js_dirs = [ workdir + '/js/*.js' , workdir + '/lib/*/*.js' ];
 var project_js_dirs = [ workdir + '/js/*.js'];
 var project_scss_dirs = [ workdir + '/sass/*.scss'];
-var project_html_dirs = [ workdir + '/*.html', workdir + '/*/*.html' ];
+var project_html_dirs = [ workdir + '/*.html', workdir + '/*/*.html', workdir + '/*/*/*.html' , workdir + '/*/*/*/*.html'];
 var main_html = "index.html";
 
 //TASKS
@@ -90,6 +90,7 @@ function uglifyJS_task(){
     gulp.src(global_js_dirs)
 	.pipe(uglify())
 	.pipe(concat(name + '.js'))
+	.pipe(useref())
 	.pipe(gulp.dest(build_dir + '/js/'));
 }
 

@@ -1,4 +1,4 @@
-(function () {
+;(function () {
   'use strict';
 
   app.controllers
@@ -12,4 +12,4 @@
 
     vm.controller = "appController"
   }
-})();
+})()

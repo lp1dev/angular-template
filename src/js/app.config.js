@@ -4,6 +4,7 @@
 
   angular
     .module('app')
+    .constant('APP_NAME', 'App Name')
     .config(config)
 
   //

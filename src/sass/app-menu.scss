@@ -1,0 +1,11 @@
+@import "app-colors";
+
+$app-menu-width: 250px;
+
+.app-menu{
+    margin: 0;
+    background-color: $app-secondary-color;
+    height: 100%;
+    width: $app-menu-width;
+    border: 1px solid $app-border-color;
+}

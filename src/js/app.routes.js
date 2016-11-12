@@ -15,7 +15,7 @@
     $routeProvider
       .when('/', {
         templateUrl: 'partials/home.html',
-        controller: 'appController',
+        controller: 'homeController',
         controllerAs: 'vm'
       })
   }

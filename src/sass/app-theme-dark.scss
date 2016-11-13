@@ -1,5 +1,19 @@
-$app-text-color: #fff;
-$app-main-color: #607D8B;
+//Material Colors
+$app-color-50: #ECEFF1;
+$app-color-100: #CFD8DC;
+$app-color-200: #B0BEC5;
+$app-color-300: #90A4AE;
+$app-color-400: #78909C;
+$app-color-500: #607D8B;
+$app-color-600: #546E7A;
+$app-color-700: #455A64;
+$app-color-800: #37474F;
+$app-color-900: #263238;
+// App Colors
+$app-primary-text-color: #000;
+$app-secondary-text-color: #fff;
+$app-main-color: $app-color-500;
 $app-background-color: #FFFFFF;
-$app-secondary-color: #CFD8DC;
-$app-border-color: #cecece;
+$app-secondary-color: $app-color-100;
+$app-sidemenu-color: $app-color-50;
+$app-border-color: $app-color-100;

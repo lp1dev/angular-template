@@ -4,12 +4,16 @@ $app-menu-width: 250px;
 
 .app-menu {
   margin: 0;
-  background-color: $app-background-color;
+  background-color: $app-sidemenu-color;
   height: 100%;
   width: $app-menu-width;
   padding-top: $app-header-height;
   box-shadow: $app-shadow;
   position:absolute;
+}
+
+.app-menu-icon{
+  padding-right: $app-font-size-small;
 }
 
 .app-menu-item {
@@ -18,7 +22,7 @@ $app-menu-width: 250px;
 }
 
 .app-menu-item:hover {
-  background-color: $app-secondary-color;
+  background-color: $app-active-shadow-color;
 }
 
 .app-menu.open{
@@ -31,5 +35,16 @@ $app-menu-width: 250px;
 }
 
 .app-menu-hamburger{
+  transition: 0.4s ease-in-out;
   padding: $app-padding;
+  border-radius: $app-header-height;
+}
+
+.app-menu-hamburger:hover{
+  transition: 0.4s ease-in-out;
+  background: $app-shadow-color;
+}
+
+.app-menu-hamburger:active{
+  background: $app-active-shadow-color;
 }

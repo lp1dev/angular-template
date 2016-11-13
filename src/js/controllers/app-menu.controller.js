@@ -16,11 +16,13 @@
     menuVm.menuItems = [
       {
         "name": "Home",
-        "view": "/"
+        "view": "/",
+        "icon": "glyphicon-home"
       },
       {
         "name": "Login",
-        "view": "/login"
+        "view": "/login",
+        "icon": "glyphicon-ok"
       }
     ]
 

@@ -1,5 +1,5 @@
 <div class="app-menu" ng-class="menuVm.isOpen ? 'open' : 'closed'">
     <div ng-repeat="item in menuVm.menuItems" class="app-menu-item" ng-click="menuVm.changeView(item.view)">
-        {{ item.name }}
+        <i aria-hidden="true" class="glyphicon app-menu-icon" ng-class="item.icon"></i>{{ item.name }}
     </div>
 </div>

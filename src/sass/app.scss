@@ -5,11 +5,13 @@ $app-font-family: 'Roboto', sans-serif;
 $app-font-size-small: 12px;
 $app-padding: 15px;
 $app-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+$app-shadow-color: rgba(0, 0, 0, 0.24);
+$app-active-shadow-color: #fff;
 $app-header-height: 50px;
 
 body {
   font-family: $app-font-family;
-  color: $app-text-color;
+  color: $app-primary-text-color !important;
   margin:0;
   overflow: hidden;
 }

@@ -10,7 +10,7 @@ $app-color-700: #455A64;
 $app-color-800: #37474F;
 $app-color-900: #263238;
 // App Colors
-$app-primary-text-color: #000;
+$app-primary-text-color: $app-color-900;
 $app-secondary-text-color: #fff;
 $app-main-color: $app-color-500;
 $app-background-color: #FFFFFF;

@@ -17,7 +17,8 @@ var name = "app";
 var http_port = 8080;
 var workdir = "./src";
 var build_dir = "./dist";
-var global_js_dirs = [ workdir + '/js/*.js' , workdir + '/lib/*/*.js' ];
+var global_js_dirs = [ workdir + '/js/*.js' ];
+var libs_dirs =  [ workdir + '/lib/*/*.js' , workdir + '/lib/*/*.js', workdir + '/lib/*/*/*.js' ]
 var project_js_dirs = [ workdir + '/js/*.js'];
 var project_scss_dirs = [ workdir + '/sass/*.scss'];
 var project_html_dirs = [ workdir + '/*.html', workdir + '/*/*.html', workdir + '/*/*/*.html' , workdir + '/*/*/*/*.html'];
@@ -25,7 +26,7 @@ var main_html = "index.html";
 
 //TASKS
 gulp.task('default', ['build']);
-gulp.task('build', ['bower', 'standard', 'sass', 'uglify-js', 'htmlmin']);
+gulp.task('build', ['bower', 'standard', 'sass', 'uglify-js', 'htmlmin', 'copy-libs']);
 gulp.task('run', ['http', 'watch']);
 gulp.task('http', http_task);
 gulp.task('uglify-js', uglifyJS_task);
@@ -34,6 +35,7 @@ gulp.task('sass', sass_task);
 gulp.task('standard', standard_task);
 gulp.task('bower', bower);
 gulp.task('watch', watch_task);
+gulp.task('copy-libs', copy_libs_task);
 
 ////
 
@@ -86,11 +88,16 @@ function sass_task(){
 	.pipe(gulp.dest(build_dir + "/css"));
 }
 
+function copy_libs_task(){
+    gulp.src(libs_dirs)
+	.pipe(gulp.dest(build_dir + '/lib/'));
+}
+
 function uglifyJS_task(){
     gulp.src(global_js_dirs)
-	.pipe(uglify())
+    	.pipe(useref())
+        .pipe(uglify())
 	.pipe(concat(name + '.js'))
-	.pipe(useref())
 	.pipe(gulp.dest(build_dir + '/js/'));
 }
 
